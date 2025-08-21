@@ -1,0 +1,163 @@
+// COLORES
+$color-primario: #456398;
+$color-secundario: #198ed7;
+$color-terciario: #564;
+$color-cancell: #729;
+$color-succes: #37a82d;
+$color-waring: #897;
+
+// LOGO
+$logo: url("https://plantillashtmlgratis.com/wp-content/themes/helium-child/vista_previa/page280/petology/images/logo.png");
+
+// VARIABLES DE PROPIEDADES
+$espacio-elementos: 5px;
+$radio: 5px;
+// IMPORTAMOS BOOTSTRAP
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css");
+// RESET CSS
+body {
+  background-color: lighten($color-primario, 45%);
+}
+
+a {
+  color: black !important;
+}
+// FUNCIONES
+@mixin logo-style($img) {
+  background-image: $img;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+// CENTRALIZA HORIZONTAL EN ESCRITORIO Y EN VERTICAL EN RESPONSIVE
+@mixin orientacion() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   RESPONSIVE
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+  }
+}
+
+@mixin column_center() {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// CLASES
+
+.header {
+  background-color: $color-primario;
+}
+.bg-body-tertiary {
+  background-color: lighten($color-terciario, 30%) !important;
+}
+.logo {
+  @include logo-style($logo);
+  width: 50px;
+  height: 50px;
+}
+
+.logo_bloque {
+  @include column_center();
+}
+
+.lupa_icon {
+  background-image: url("https://plantillashtmlgratis.com/wp-content/themes/helium-child/vista_previa/page280/petology/images/search-icon.png");
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.presentacion_img {
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("https://c4.wallpaperflare.com/wallpaper/644/569/83/animales-baby-cachorros-labrados-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* ajusta la imagen sin deformar */
+  background-position: center;
+  /* centra la imagen */
+  @include column_center();
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  @media screen and(max-width:720px) {
+    max-height: 300px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bolder;
+}
+.btn-primary {
+  background-color: $color-primario;
+  transition: 0.5s;
+  &:hover {
+    background-color: darken($color-primario, 30%) !important;
+  }
+}
+.contenido_explicacion {
+  background-color: lighten($color-secundario, 10%);
+  padding: 20px 25px 15px 10px;
+  gap: 20px;
+}
+
+.contenido_servicios {
+  @include column_center();
+  padding: 15px;
+  background-color: lighten($color-primario, 30%);
+  border: solid 1px lighten($color-terciario, 30%);
+  box-shadow: 5px 5px 10px lighten($color-secundario, 30%);
+  max-width: 300px;
+  transition: 0.5s;
+  border-radius: $radio;
+  &:hover {
+    box-shadow: 5px 5px 10px darken($color-secundario, 30%);
+    transform: translateY(-6px);
+  }
+}
+
+.img_servicios_description {
+  width: 150px;
+  height: 150px;
+}
+
+.btn-secondary {
+  background-color: lighten($color-secundario, 30%);
+  &:hover {
+    background-color: darken($color-secundario, 30%);
+  }
+}
+
+.mision {
+  color: #fff;
+  background-color: darken($color-secundario, 35%);
+}
+
+.Contactanos {
+  background-color: lighten($color-primario, 20%);
+  padding: 20px 25px 15px 10px;
+  gap: 20px;
+}
+.formulario {
+  background-color: lighten($color-primario, 40%);
+  padding: 15px;
+  max-width: 600px;
+  min-width: 300px;
+  border-radius: $radio;
+}
+
+.footer {
+  gap: $espacio-elementos;
+  padding: 15px;
+  background-color: darken($color-secundario, 10%);
+  color:#fff;
+}

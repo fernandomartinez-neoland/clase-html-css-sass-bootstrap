@@ -1,0 +1,138 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css");
+body {
+  background-color: #d6deec;
+}
+
+a {
+  color: black !important;
+}
+
+.header {
+  background-color: #456398;
+}
+
+.bg-body-tertiary {
+  background-color: #a2b48f !important;
+}
+
+.logo {
+  background-image: url("https://plantillashtmlgratis.com/wp-content/themes/helium-child/vista_previa/page280/petology/images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.logo_bloque {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lupa_icon {
+  background-image: url("https://plantillashtmlgratis.com/wp-content/themes/helium-child/vista_previa/page280/petology/images/search-icon.png");
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.presentacion_img {
+  height: 600px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("https://c4.wallpaperflare.com/wallpaper/644/569/83/animales-baby-cachorros-labrados-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* ajusta la imagen sin deformar */
+  background-position: center;
+  /* centra la imagen */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 720px) {
+  .presentacion_img {
+    max-height: 300px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bolder;
+}
+
+.btn-primary {
+  background-color: #456398;
+  transition: 0.5s;
+}
+.btn-primary:hover {
+  background-color: #151e2f !important;
+}
+
+.contenido_explicacion {
+  background-color: #3ba6e8;
+  padding: 20px 25px 15px 10px;
+  gap: 20px;
+}
+
+.contenido_servicios {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  background-color: #a1b4d5;
+  border: solid 1px #a2b48f;
+  box-shadow: 5px 5px 10px #96cff3;
+  max-width: 300px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.contenido_servicios:hover {
+  box-shadow: 5px 5px 10px #09334e;
+  transform: translateY(-6px);
+}
+
+.img_servicios_description {
+  width: 150px;
+  height: 150px;
+}
+
+.btn-secondary {
+  background-color: #96cff3;
+}
+.btn-secondary:hover {
+  background-color: #09334e;
+}
+
+.mision {
+  color: #fff;
+  background-color: #062437;
+}
+
+.Contactanos {
+  background-color: #7e98c5;
+  padding: 20px 25px 15px 10px;
+  gap: 20px;
+}
+
+.formulario {
+  background-color: #c5d0e4;
+  padding: 15px;
+  max-width: 600px;
+  min-width: 300px;
+  border-radius: 5px;
+}
+
+.footer {
+  gap: 5px;
+  padding: 15px;
+  background-color: #1470a9;
+  color: #fff;
+}
